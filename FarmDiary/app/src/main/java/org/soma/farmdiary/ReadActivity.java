@@ -30,4 +30,11 @@ public class ReadActivity extends ExplorerActivity {
         });
     }
 
+    public void plantInfo(View view) {
+        startActivity(new Intent(this, PlantInfoActivity.class));
+    }
+
+    public void siteInfo(View view) {
+        startActivity(new Intent(this,SiteInfoActivity.class));
+    }
 }
