@@ -2,8 +2,8 @@ package org.soma.farmdiary;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -12,7 +12,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class InfoPlantActivity extends AppCompatActivity
-    implements AdapterView.OnItemClickListener {
+        implements AdapterView.OnItemClickListener {
 
     ArrayList<String> plantInfoList = new ArrayList<String>();
     ArrayList<String> plantNameList = new ArrayList<String>();

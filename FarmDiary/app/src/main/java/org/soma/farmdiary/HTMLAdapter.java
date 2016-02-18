@@ -8,15 +8,16 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by lminjae on 2016. 2. 18..
  */
 public class HTMLAdapter extends BaseAdapter {
     private Context context;
-    private List<String> list;
+    private List<Map<String, String>> list;
 
-    public HTMLAdapter(Context context, List<String> list) {
+    public HTMLAdapter(Context context, List<Map<String, String>> list) {
         this.context = context;
         this.list = list;
     }
@@ -39,7 +40,7 @@ public class HTMLAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         TextView tv = new TextView(context);
-        tv.setText(Html.fromHtml(list.get(position), new HTMLImageGetter(context, tv), null));
+        tv.setText(Html.fromHtml(list.get(position).get(DiaryDB.TAG_DATA), new HTMLImageGetter(context, tv), null));
 
         return tv;
     }

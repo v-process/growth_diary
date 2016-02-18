@@ -18,6 +18,6 @@ public class InfoActivity extends AppCompatActivity {
     }
 
     public void siteInfo(View view) {
-        startActivity(new Intent(this,InfoSiteActivity.class));
+        startActivity(new Intent(this, InfoSiteActivity.class));
     }
 }

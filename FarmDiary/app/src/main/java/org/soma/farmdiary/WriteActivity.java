@@ -1,6 +1,5 @@
 package org.soma.farmdiary;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -10,6 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 
 public class WriteActivity extends AppCompatActivity {
+    DiaryDB db = new DiaryDB(this, "diary.db", null, 1);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +20,13 @@ public class WriteActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Post", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-                Log.i("Input", ((EditText) findViewById(R.id.text)).getText().toString());
+                if (((EditText) findViewById(R.id.type)).getText().length() < 1) {
+                    Snackbar.make(view, "Please Input Type!!!", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                } else {
+                    Snackbar.make(view, "Post", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                    db.Insert(((EditText) findViewById(R.id.type)).getText().toString(), ((EditText) findViewById(R.id.text)).getText().toString());
+                    finish();
+                }
             }
         });
     }

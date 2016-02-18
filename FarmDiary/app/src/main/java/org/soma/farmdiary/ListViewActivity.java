@@ -4,9 +4,6 @@ import android.app.ListActivity;
 import android.os.Bundle;
 import android.widget.ListAdapter;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class ListViewActivity extends ListActivity {
 
     protected ListAdapter mListAdapter;
@@ -14,7 +11,9 @@ public class ListViewActivity extends ListActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+    }
 
+    public void update() {
         setListAdapter(mListAdapter);
     }
 }
