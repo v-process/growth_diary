@@ -1,13 +1,11 @@
 package org.soma.farmdiary;
 
-import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.widget.Toolbar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class ReadActivity extends ListActivity {
+public class ReadActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,4 +13,11 @@ public class ReadActivity extends ListActivity {
         setContentView(R.layout.activity_read);
     }
 
+    public void plantInfo(View view) {
+        startActivity(new Intent(this, PlantInfoActivity.class));
+    }
+
+    public void siteInfo(View view) {
+        startActivity(new Intent(this,SiteInfoActivity.class));
+    }
 }
