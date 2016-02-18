@@ -71,6 +71,7 @@ public class HTMLImageGetter implements Html.ImageGetter {
             }
             return null;
         }
+
         @Override
         protected void onPostExecute(Void result) {
             v.setText(v.getText());

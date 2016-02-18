@@ -17,13 +17,13 @@ public class StartupActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_startup);
 
-        ((Button)findViewById(R.id.btn_write)).setOnClickListener(new View.OnClickListener() {
+        ((Button) findViewById(R.id.btn_write)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), WriteActivity.class));
+                startActivity(new Intent(getApplicationContext(), ReadActivity.class));
             }
         });
-        ((Button)findViewById(R.id.btn_read)).setOnClickListener(new View.OnClickListener() {
+        ((Button) findViewById(R.id.btn_read)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), ReadActivity.class));
@@ -62,7 +62,8 @@ public class StartupActivity extends Activity {
                 .setNegativeButton(android.R.string.no,
                         new DialogInterface.OnClickListener() {
                             @Override
-                            public void onClick(DialogInterface dialog, int which) {}
+                            public void onClick(DialogInterface dialog, int which) {
+                            }
                         })
                 .show();
     }

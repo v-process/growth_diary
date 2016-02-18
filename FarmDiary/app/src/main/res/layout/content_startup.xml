@@ -15,22 +15,22 @@
         android:orientation="vertical">
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
             android:id="@+id/btn_write"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#3987A0"
-            android:text="@string/title_activity_write" />
+            android:text="@string/title_activity_read" />
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
             android:id="@+id/btn_read"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#CB6C1D"
-            android:text="@string/title_activity_read" />
+            android:text="@string/title_activity_info" />
 
     </LinearLayout>
 
