@@ -19,16 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".WriteActivity"
-            android:label="@string/title_activity_write"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".ReadActivity"
-            android:label="@string/title_activity_read"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".SiteInfoActivity" />
-        <activity android:name=".PlantInfoActivity" />
+        <activity android:name=".InfoActivity" />
+        <activity android:name=".InfoSiteActivity" />
+        <activity android:name=".InfoPlantActivity" />
+        <activity android:name=".WriteActivity" />
     </application>
 
 </manifest>

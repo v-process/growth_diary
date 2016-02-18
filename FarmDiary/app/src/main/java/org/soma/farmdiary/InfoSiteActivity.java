@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class SiteInfoActivity extends AppCompatActivity
+public class InfoSiteActivity extends AppCompatActivity
     implements AdapterView.OnItemClickListener {
 
     ListView siteListView;
@@ -19,7 +19,7 @@ public class SiteInfoActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_site_info);
+        setContentView(R.layout.activity_info_site);
 
         siteListView = (ListView) findViewById(R.id.siteListView);
         siteListView.setOnItemClickListener(this);

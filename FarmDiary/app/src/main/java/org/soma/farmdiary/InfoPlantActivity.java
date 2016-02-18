@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class PlantInfoActivity extends AppCompatActivity
+public class InfoPlantActivity extends AppCompatActivity
     implements AdapterView.OnItemClickListener {
 
     ArrayList<String> plantInfoList = new ArrayList<String>();
@@ -20,7 +20,7 @@ public class PlantInfoActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_plant_info);
+        setContentView(R.layout.activity_info_plant);
 
         ListView plantInfoListView = (ListView) findViewById(R.id.plantInfoListview);
         plantInfoListView.setOnItemClickListener(this);

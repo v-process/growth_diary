@@ -6,7 +6,7 @@
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
     android:orientation="vertical"
-    tools:context="org.soma.farmdiary.PlantInfoActivity">
+    tools:context=".InfoPlantActivity">
 
     <Button
         android:layout_width="wrap_content"
