@@ -2,7 +2,6 @@
     <string name="app_name">Farm Diary</string>
     <string name="exit_msg">어플리케이션을 종료하시겠습니까?</string>
     <string name="exit">종료</string>
-    <string name="title_activity_write">쓰기</string>
-    <string name="title_activity_read">읽기</string>
-    <string name="title_activity_info">읽기</string>
+    <string name="title_activity_diary">성장 일기</string>
+    <string name="title_activity_info">정보</string>
 </resources>

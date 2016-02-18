@@ -21,7 +21,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#3987A0"
-            android:text="@string/title_activity_read" />
+            android:text="@string/title_activity_diary" />
 
         <Button
             android:id="@+id/btn_read"

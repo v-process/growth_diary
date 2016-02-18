@@ -20,7 +20,7 @@ public class StartupActivity extends Activity {
         ((Button) findViewById(R.id.btn_write)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), InfoActivity.class));
+                startActivity(new Intent(getApplicationContext(), DiaryActivity.class));
             }
         });
         ((Button) findViewById(R.id.btn_read)).setOnClickListener(new View.OnClickListener() {

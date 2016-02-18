@@ -5,12 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="org.soma.farmdiary.WriteActivity"
-    tools:showIn="@layout/activity_write">
+    tools:context="org.soma.farmdiary.DiaryActivity"
+    tools:showIn="@layout/activity_diary">
 
-    <EditText
-        android:id="@+id/text"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <include layout="@layout/content_explorer" />
 
 </RelativeLayout>
