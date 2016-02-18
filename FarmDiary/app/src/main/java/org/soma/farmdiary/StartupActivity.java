@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.Button;
 
 public class StartupActivity extends Activity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,42 +28,5 @@ public class StartupActivity extends Activity {
                 startActivity(new Intent(getApplicationContext(), InfoActivity.class));
             }
         });
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.exit, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.exit:
-                onExit();
-                return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-    public void onExit() {
-        new AlertDialog.Builder(this)
-                .setTitle(R.string.exit_msg)
-                .setPositiveButton(android.R.string.yes,
-                        new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                moveTaskToBack(true);
-                                finish();
-                                android.os.Process.killProcess(android.os.Process.myPid());
-                            }
-                        })
-                .setNegativeButton(android.R.string.no,
-                        new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                            }
-                        })
-                .show();
     }
 }

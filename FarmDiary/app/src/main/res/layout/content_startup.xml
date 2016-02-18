@@ -20,9 +20,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="40dp"
-            android:background="@mipmap/plant"
-            android:text="@string/title_activity_diary"/>
+            android:background="@drawable/plant"
+            android:text="@string/title_activity_diary"
+            android:textSize="40dp" />
 
         <Button
             android:id="@+id/btn_read"
@@ -30,10 +30,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="40dp"
+            android:background="@drawable/diary"
+            android:text="@string/title_activity_info"
             android:textColor="#000000"
-            android:background="@mipmap/diary"
-            android:text="@string/title_activity_info" />
+            android:textSize="40dp" />
 
     </LinearLayout>
 

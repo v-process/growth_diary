@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="org.soma.farmdiary.WriteActivity"
-    tools:showIn="@layout/activity_write"
-    android:orientation="vertical">
+    tools:showIn="@layout/activity_write">
 
     <EditText
         android:id="@+id/type"

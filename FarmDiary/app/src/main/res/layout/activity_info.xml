@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".InfoPlantActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="242dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/harvest"
+        android:onClick="plantInfo"
+        android:text="식물재배정보"
+        android:textColor="#ffffff"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:background="@drawable/http"
+        android:onClick="siteInfo"
+        android:textColor="#000"
+        android:textSize="40dp" />
+
+</LinearLayout>

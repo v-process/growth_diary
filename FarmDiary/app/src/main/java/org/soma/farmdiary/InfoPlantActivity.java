@@ -13,6 +13,7 @@ import java.util.ArrayList;
 
 public class InfoPlantActivity extends AppCompatActivity
         implements AdapterView.OnItemClickListener {
+    final static String ADDR = "http://www.nihhs.go.kr/personal/plow_view.asp?nongsaroMenuId=PS03172&PageIndex=1&cntntsNo=";
 
     ArrayList<String> plantInfoList = new ArrayList<String>();
     ArrayList<String> plantNameList = new ArrayList<String>();
@@ -25,13 +26,13 @@ public class InfoPlantActivity extends AppCompatActivity
         ListView plantInfoListView = (ListView) findViewById(R.id.plantInfoListview);
         plantInfoListView.setOnItemClickListener(this);
 
-        plantInfoList.add("http://www.nihhs.go.kr/personal/plow_view.asp?PageIndex=1&cntntsNo=101643&nongsaroMenuId=PS03172&sSeCode=335001&stype=1&searchword=");
+        plantInfoList.add(ADDR + "101643");
         plantNameList.add("양파");
 
-        plantInfoList.add("http://www.nihhs.go.kr/personal/plow_view.asp?PageIndex=1&cntntsNo=101641&nongsaroMenuId=PS03172&sSeCode=335001&stype=1&searchword=");
+        plantInfoList.add(ADDR + "101641");
         plantNameList.add("상추");
 
-        plantInfoList.add("http://www.nihhs.go.kr/personal/plow_view.asp?PageIndex=3&cntntsNo=101627&nongsaroMenuId=PS03172&sSeCode=335001&stype=1&searchword=");
+        plantInfoList.add(ADDR + "101627");
         plantNameList.add("배추");
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, plantNameList);

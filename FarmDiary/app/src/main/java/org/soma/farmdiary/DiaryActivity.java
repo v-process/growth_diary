@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
@@ -14,10 +13,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import org.json.JSONException;
-import org.w3c.dom.Text;
-
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -74,7 +69,7 @@ public class DiaryActivity extends ListViewActivity {
                 }
             });
 
-            Set < String > type_set = new HashSet();
+            Set<String> type_set = new HashSet();
 
             for (int i = 0; i < lst.size(); i++)
                 type_set.add(lst.get(i).get(DiaryDB.TAG_TYPE));
